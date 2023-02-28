@@ -1,0 +1,61 @@
+<html> 
+ <head>
+  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    <header>
+      <h1 id="title">Plant Lovers Form</h1>
+      <p id="description">Let us know more about you and your plants!</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name Lastname" required>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+        <label for="number" id="number-label">Age (optional):</label>
+        <input type="number" id="number" name="age" placeholder="35" min="13" max="99">
+        <label for="dropdown">Select your favorite plant:</label>
+          <select id="dropdown" name="pets" required>
+            <option disabled selected value>List of plants</option>
+            <option value="succulents">Succulents</option>
+            <option value="house">House plants</option>
+            <option value="bonsai">Bonsai</option>
+            <option value="officinal">Officinal herbs</option>
+          </select>
+          <p>Do you grow from seeds?</p>
+          <label class="radio-control" for="yes">
+            Yes
+            <input type="radio" id="yes" name="seeds" value="yes" required>
+          </label>
+          <label class="radio-control" for="no">
+            No
+            <input type="radio" id="no" name="seeds" value="no" required>
+          </label>
+          <p>What do you love more about plants?</p>
+          <label class="radio-control" for="flowers">
+            <input type="checkbox" id="flowers" name="love" value="flowers">
+            The flowers
+          </label>
+          <label class="radio-control" for="variety">
+            <input type="checkbox" id="variety" name="love" value="variety">
+            The variety
+          </label>
+          <label class="radio-control" for="watering">
+            <input type="checkbox" id="watering" name="love" value="watering">
+            Watering them
+          </label>
+          <label class="radio-control" for="fruits">
+            <input type="checkbox" id="fruits" name="love" value="fruits">
+            The fruits
+          </label>
+          <p>Share with us your love!</p>
+          <textarea placeholder="I love my plants because..."></textarea>
+          <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
+    <footer>
+      Coded by <a href="https://github.com/PastoreMartina" target="_blank">Martina Pastore</a>
+    </footer>
+  </body>
+</html>
