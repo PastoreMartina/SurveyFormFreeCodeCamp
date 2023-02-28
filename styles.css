@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   background-image: url(https://images.unsplash.com/photo-1491147334573-44cbb4602074?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: rgb(255, 255, 255);
+}
+
+header, main {
+    text-align: justify;
+    width: auto;
+    margin: 2% auto;
+    background-color: rgba(42, 136, 72, 0.5);
+    font-size: 200%;
+    border-radius: 5px;
+  padding: 1% 0;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select {
+    width: 100%;
+    padding: 2%;
+    margin: 4% 0;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 120px;
+    border-radius: 5px;
+    padding: 1%;
+    font-family: sans-serif;
+    font-size: 50%;
+}
+
+input[type="submit"]{
+    background-color: rgb(65, 58, 189);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+    cursor: pointer;
+    width: 20%;
+    position: relative;
+    left: 80%;
+    font-size: 60%;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(141, 58, 189);
+}
+
+main p {
+  margin: 4% 0;
+}
+@media (max-width: 500px) {
+    body {
+        font-size: 70%;
+    }
+  input[type="submit"]{
+    width: 30%;
+    position: static;
+  }
+  
+  header, main {
+    padding: 3%;
+  }
+}
